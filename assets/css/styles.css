@@ -1,30 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
+body .top-nav .navbar {
+  height: 114px;
+  position: relative;
 }
 
-/* navigation (KEVIN)*/
+body .top-nav .navbar .navbar-brand .nav-logo {
+  width: 300px;
+  height: 114px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 10px 0px 9px 16px;
+}
 
+body .top-nav .navbar .collapse .navbar-nav {
+  position: absolute;
+  right: 0px;
+  padding: 0px 31px 0px 0px;
+}
 
-/* main visual (KEVIN)*/
+body .top-nav .navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: #707070;
+  font-size: 30px;
+  padding: 0px 65px 0px 0px;
+}
 
+body .main-visual .masthead {
+  height: 981px;
+  background-image: url(../images/main_visual/intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
 
-/* news */
+body .main-visual .masthead .container .row {
+  position: absolute;
+  text-align-last: start;
+  padding: 0px;
+  margin: 0px;
+  top: -30px;
+  left: 71px;
+}
 
+body .main-visual .masthead .container .row .header-h1 {
+  font-weight: bolder;
+  font-size: 90px;
+  line-height: 90%;
+}
 
-/* vision (JUNE) */
-
-
-/* About (JUNE) */
-
-
-/* Works (NAYTHAN) */
-
-
-/* Works Grid (NAYTHAN) */
-
-
-/* Contact (BEV) */
-
-
-/* Footer (BEV) */
+body .main-visual .masthead .container .row .lead {
+  font-weight: bolder;
+  font-size: 25px;
+  line-height: 90%;
+}
+/*# sourceMappingURL=styles.css.map */
