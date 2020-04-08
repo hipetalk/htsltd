@@ -41,7 +41,7 @@
                     <a class="nav-link" href="#about-section">Profile</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Our Work</a>
+                    <a class="nav-link" href="#our-work">Our Work</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -165,7 +165,8 @@
     </section>
     <!-- About us ends here -->
     <!-- Our works starts here (NAYTHAN) -->
-        <section class="vision" id="vision-section">
+        <section class="vision" id="our-work">
+
         <div class="vision_main">
             <div class="vision_img_1">
                 <img src="assets/images/works/5.jpg" alt="" width="800px" height="420px;">
