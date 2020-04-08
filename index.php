@@ -69,7 +69,7 @@
     <!-- main visual ends here -->
     <!-- news starts here -->  
     <section id="news">
-        <div class="container">
+        <div class="container-fluid">
             <div class="news-title">
                 News
             </div>

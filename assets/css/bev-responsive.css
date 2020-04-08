@@ -187,7 +187,8 @@ html {
         display: table;  width:100%;  
         text-align: left;
         border-bottom: 0px solid white;
-    }              
+    }      
+    
 
     #news table td {    
         display: table; width:100%;  
@@ -203,8 +204,9 @@ html {
 
     }
 
-    #news td {
+    #news table td {
         padding: 15px;
+        border-bottom: 1px solid white;
 
     }
     
@@ -215,6 +217,8 @@ html {
         border-bottom: 0px solid white;
         font-weight: 500;
     }
+
+    
 
 
     /* start of contact section */
@@ -271,6 +275,7 @@ html {
 
     #news td {
         padding: 15px;
+        border-bottom: 2px solid white;
 
     }
     
