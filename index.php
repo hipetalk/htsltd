@@ -1,19 +1,16 @@
-<?php
-include ('contactform.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
     <title>HTS Ltd.</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/bev-responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 
     <!--- for recaptcha-->
@@ -56,7 +53,7 @@ include ('contactform.php');
         </section>
         <!-- navigation ends here -->
         <!-- main visual starts here (KEVIN) -->
-        <section class="main-visual">
+        <section class="main-visual" id="home">
             <header class="masthead">
                 <div class="container h-100">
                 <div class="row h-100 align-items-center">
@@ -70,7 +67,44 @@ include ('contactform.php');
             </header>
         </section>
     <!-- main visual ends here -->
-    <!-- news starts here -->
+    <!-- news starts here -->  
+    <section id="news">
+        <div class="container">
+            <div class="news-title">
+                News
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover mt-5">
+                    <tbody>
+                        <tr>
+                            <th scope="row" id="title">Lorem ipsum</th>
+                            <td id="date text-dark">01-02-2020</td>
+                            <td class="d-none d-sm-table-cell text-dark">Lorem ipsum dolor sit amet..</td>
+                            <td class="read-more"><a href="#">READ MORE</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="title">Lorem ipsum</th>
+                            <td id="date text-dark">01-02-2020</td>
+                            <td class="d-none d-sm-table-cell text-dark">Lorem ipsum dolor sit amet..</td>
+                            <td class="read-more"><a href="#">READ MORE</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" id="title">Lorem ipsum</th>
+                            <td id="date text-dark">01-02-2020</td>
+                            <td class="d-none d-sm-table-cell text-dark">Lorem ipsum dolor sit amet..</td>
+                            <td class="read-more"><a href="#">READ MORE</a>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+            </div>
+
+        </div>
+    </section>
 
     <!-- news ends here -->
     <!-- Our vision starts here (JUNE) -->
@@ -132,6 +166,7 @@ include ('contactform.php');
     <!-- About us ends here -->
     <!-- Our works starts here (NAYTHAN) -->
         <section class="vision" id="our-work">
+
         <div class="vision_main">
             <div class="vision_img_1">
                 <img src="assets/images/works/5.jpg" alt="" width="800px" height="420px;">
@@ -158,7 +193,7 @@ include ('contactform.php');
     </section>
     <!-- Our works ends here -->
     <!-- Our works grid starts here (NAYTHAN) -->
-    <div class="works">
+    <div class="works" id="works-section">
         <div class="cont">
             <div class="content">
             <img src="assets/images/works/1.jpg" width = 500>
@@ -202,9 +237,11 @@ include ('contactform.php');
 
               <div class="col maps"
               >
-                    <img src="./assets/images/contact/logo_3_new.png" width="60%" height="auto"/>
 
-                    <div class="contact-addr">愛知県名古屋市西区</div>
+              <div class="contact-title">
+                  <img src="./assets/images/contact/logo_3_new.png" width="60%" height="auto"/>
+                  <div class="contact-addr">愛知県名古屋市西区</div>
+              </div>
 
                     <!-- maps section -->
                     <div class="maprouter mt-3"
@@ -221,17 +258,17 @@ include ('contactform.php');
 
                </div>
 
-               <div class="col col-form">
+               <div class="col form">
                     <div class="form-title">
-                        GET IN TOUCH
+                        Get in touch
                     </div>
 
-                    <form method="post" action="contactform.php">
+                    <form id="contact-form ">
                         <input type="text" name="text_name" id="text_name" class="form-control mt-5" placeholder="Name *" required/>
                         <input type="email" name="text_email" id="text_email" class="form-control mt-2" placeholder="Email address *" required/>
                         <textarea name="text_message" id="text_message" class="form-control mt-2" placeholder="Message *" style="width: 100%; height: 150px;" required></textarea>
 
-                        <div class="form-check">
+                        <div class="form-check mt-2">
                         <input class="form-check-input" type="checkbox" value="" id="agreeCheck" required>
                         <label class="form-check-label" for="agreeCheck" style="font-size: 12px;">
                             私は株式会社 <span style="color: #00AEEF; font-weight: bold;">HTS LTd.</span> の “個人情報保護に関する方針” および” 個人情報に関する取扱い”について同意します
@@ -239,11 +276,14 @@ include ('contactform.php');
                         </div>
 
                         <div class="g-recaptcha mt-4" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI">
+                            
+                        </div>
 
+                            <div class="form-group">
+                                <button class="btn" type="submit">Send</button>
+                            </div>
                         </div>
-                        <div class="form-group text-right mt-3">
-                            <button type="submit" name="submit" class="btn" style="background-color: #00AEEF; color: white; padding: 5px 25px 5px 25px; border-radius: 50px; font-size: 22px;">Send</button>
-                        </div>
+
                     </form>
                </div>
 
@@ -251,51 +291,49 @@ include ('contactform.php');
       </div>
     </section>
     <!-- Contact ends here -->
-
-    <!-- Footer starts here (BEV) -->
-    <!-- Footer -->
     <footer>
-      <div class="container"
-      >
-        <div class="row text-center d-flex justify-content-center pt-3 mb-3"
+        <div class="container"
         >
-    
-            <div class="col-md-2 mb-0">
-            <h6 class="footer-links">
-                <a href="#">Top</a>
-            </h6>
-            </div>
-    
-            <div class="col-md-2 mb-0">
-            <h6 class="footer-links">
-                <a href="#">Vision</a>
-            </h6>
-            </div>
-    
-            <div class="col-md-2 mb-0">
-            <h6 class="footer-links">
-                <a href="#">Profile</a>
-            </h6>
-            </div>
-    
-            <div class="col-md-2 mb-0">
-            <h6 class="footer-links">
-                <a href="#">Our Works</a>
-            </h6>
-            </div>
-    
-            <div class="col-md-2 mb-0">
-            <h6 class="footer-links">
-                <a href="#">Contact</a>
-            </h6>
-            </div>
-
-        </div>
-      </div>
-    
-      <div class="footer-copyright text-center py-3">Copyright © 2020</div>
+          <div class="row text-center d-flex justify-content-center pt-3 mb-3"
+          >
+      
+              <div class="col-md-2 mb-0">
+              <h6 class="footer-links">
+                  <a href="#home">Home</a>
+              </h6>
+              </div>
+      
+              <div class="col-md-2 mb-0">
+              <h6 class="footer-links">
+                  <a href="#vision-section">Vision</a>
+              </h6>
+              </div>
+      
+              <div class="col-md-2 mb-0">
+              <h6 class="footer-links">
+                  <a href="#profile-section">Profile</a>
+              </h6>
+              </div>
+      
+              <div class="col-md-2 mb-0">
+              <h6 class="footer-links">
+                  <a href="#works-section">Our Works</a>
+              </h6>
+              </div>
+      
+              <div class="col-md-2 mb-0">
+              <h6 class="footer-links">
+                  <a href="#contact">Contact</a>
+              </h6>
+              </div>
   
-  </footer>
+          </div>
+        </div>
+      
+        <div class="footer-copyright text-center py-3">Copyright © 2020</div>
+    
+    </footer>
+
   <!-- Footer -->
 
     <!-- Footer ends here -->
@@ -307,6 +345,7 @@ include ('contactform.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
 /* navigation (KEVIN)*/
 .top-nav{
     position: fixed;
@@ -595,5 +599,3 @@ footer .footer-copyright {
 footer h6 a{
     color: #ffffff;
 }
-
-
