@@ -72,12 +72,12 @@
         <div class="container-fluid">
             <div class="news-title">
                 News
-            </div>
+            </div>    
 
             <div class="table-responsive">
                 <table class="table table-hover mt-5">
                     <tbody>
-                        <tr>
+                        <!-- <tr>
                             <th scope="row" id="title">Lorem ipsum</th>
                             <td id="date text-dark">01-02-2020</td>
                             <td class="d-none d-sm-table-cell text-dark">Lorem ipsum dolor sit amet..</td>
@@ -97,7 +97,26 @@
                             <td class="d-none d-sm-table-cell text-dark">Lorem ipsum dolor sit amet..</td>
                             <td class="read-more"><a href="#">READ MORE</a>
                             </td>
+                        </tr> -->
+                        <tr>
+                            <td style="color: #00AEEF; font-weight: bold;">教へひかン溶毎カオ</td>
+                            <td>01.01.2020</td>
+                            <td class="d-none d-sm-table-cell">リか病激れよ置紹5晋ツチラ職電タシイ座置挑トし。。。</td>
+                            <td style="color: #EC008C;"><a href="#">READ MORE</a></td>
                         </tr>
+                        <tr>
+                            <td style="color: #00AEEF; font-weight: bold;">教へひかン溶毎カオ</td>
+                            <td>01.01.2020</td>
+                            <td class="d-none d-sm-table-cell">リか病激れよ置紹5晋ツチラ職電タシイ座置挑トし。。。</td>
+                            <td style="color: #EC008C;"><a href="#">READ MORE</a></td>
+                        </tr>
+                        <tr>
+                            <td style="color: #00AEEF; font-weight: bold;">教へひかン溶毎カオ</td>
+                            <td>01.01.2020</td>
+                            <td class="d-none d-sm-table-cell">リか病激れよ置紹5晋ツチラ職電タシイ座置挑トし。。。</td>
+                            <td style="color: #EC008C;"><a href="#">READ MORE</a></td>
+                        </tr>
+                        
                     </tbody>
     
                 </table>
