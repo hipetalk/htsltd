@@ -99,22 +99,6 @@ html {
     align-content: right;
 }
 
-@media (min-width: 992px) {
-    #contact{padding-bottom: 50px;}
-
-    /* start of contact section */
-
-  
-     #contact .maps iframe{
-       width: 100%;
-       height: 700px;
-     }
-
-    /* end of contact section */
-
-}
-
-
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
 
@@ -202,6 +186,7 @@ html {
     #news table th {    
         display: table;  width:100%;  
         text-align: left;
+        border-bottom: 0px solid white;
     }              
 
     #news table td {    
@@ -214,7 +199,7 @@ html {
     
     #news table .read-more {
         text-align: right;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid white;
 
     }
 
@@ -293,7 +278,7 @@ html {
         font-size: 18px;
         color: #00AEEF;
         text-transform: uppercase;
-        border-bottom: 2px solid gray;
+        border-bottom: 2px solid white;
         font-weight: 500;
     }
 
@@ -304,6 +289,11 @@ html {
         padding-bottom: 50px;
         padding-top: 30px;
     }
+
+    #contact .maps iframe{
+        width: 100%;
+        height: 700px;
+      }
 
     #contact .maps .maprouter .gmap_canvas{
         width: auto;
